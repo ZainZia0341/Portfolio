@@ -1,0 +1,294 @@
+.background{
+    background-image: url("./images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+.portfolio-heading-container{
+    padding-top: 1em;
+}
+.portfolio-icon{
+    width: 4em;
+    margin-bottom: 0.7em;
+}
+.portfolio-heading-container>h1{
+    color: white;
+    display: inline-block;
+    font-family: georgia;
+    font-size: 1.8em;
+    margin: 0px;
+}
+@media screen and (max-width: 490px){
+    .portfolio-heading-container>h1{
+        font-size: 1.3em;
+    }
+    .portfolio-icon{
+        width: 3em;
+    }
+}
+.align-home-right{
+    text-align: right;
+}
+.page-down{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    font-family: sans-serif;
+    display: inline-block;
+    margin-top: 0.7em;
+    border: 2px solid #2abe8b;
+    border-radius: 1em;
+    padding: 0.4em 1.5em;
+    transition: 0.3s;
+}
+.page-down:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #2abe8b;
+}
+.centrle-atom{
+    text-align: center;
+    margin-top: 10em;
+    animation-duration: 1s;
+    animation-name: central-Atom;
+}
+@keyframes central-Atom{
+    from {margin-left: -100em;}
+}
+.centrle-atom>img{
+    width: 15em;
+    border-radius: 50%;
+}
+.name{
+    text-align: center;
+}
+.name>h1{
+    color: white;
+    font-family: georgia;
+    animation-duration: 1s;
+    animation-name: name-animation;
+}
+@keyframes name-animation{
+    from{margin-right: -100em;}
+}
+.quotation{
+    text-align: center;
+    color: rgb(207, 207, 207);
+    font-size: 1.2em;
+    font-family: Georgia;
+}
+.projects-list{
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: georgia;
+    overflow: hidden;
+    margin-top: 10em;
+}
+.projects-image-container{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(17em);
+}
+.projects-list img{
+    width: 100%;
+    height: 50%;
+    animation-name: projects-animation;
+    animation-duration: 2s;
+    transition: 0.5s;
+}
+.projects-image-container:hover{
+    cursor: pointer;
+}
+.projects-image-container>a>img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 1px 10px white;
+}
+.projects-list p{
+    margin: 1em;
+}
+@media screen and (max-width: 420px){
+    .projects-list>#small-size{
+        width: 90%;
+        margin: 2em 5%;
+    }
+}
+.container-fluid{
+    margin: 2em auto;
+    margin-bottom: 0em;
+    background-color: #2abe8b;
+    text-align: center;
+    color: white;
+}
+.container-fluid>span{
+    font-family: Georgia;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 2px black;
+    border-bottom: 2px solid white;
+}
+.container-fluid h3{
+    text-align: left;
+    font-family: Georgia;
+}
+.joker-image-container{
+    font-size: 1.3em;
+    text-align: center;
+    font-family: sans-serif;
+}
+.joker-image{
+    width: 70%;
+    vertical-align: bottom;
+    margin: 2em;
+}
+.contect-container{
+    background-color: #181818;
+    margin-top: 0em;
+    text-align: left;
+    padding-bottom: 10em;
+}
+@media screen and (max-width: 520px){
+    .contect-container .col-xs-4{
+        display: block;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+}
+.contect-container ul{
+    padding: 0px;
+}
+.contect-container li{
+    list-style-type: none;
+    margin: 1em auto;
+}
+.contect-container li a{
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.contect-container li a:hover{
+    color: #2abe8b;
+}
+.follow-link-fb{
+    width: 2em;
+    border-radius: 50%;
+}
+.follow-link-github{
+    border-radius: 50%;
+    width: 2em;
+}
+.nav-bar{
+    background-color: #414141;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 0px;
+    overflow: hidden;
+    top: 0;
+    transition: all 1s;
+}
+@keyframes nav-scroll{
+    from{
+        height: 0px;
+        opacity: 0;
+    }
+    to{
+        height: auto;
+        opacity: 1;
+    }
+}
+@media screen and (min-width: 420px){
+    #nav-bar{
+        animation-name: nav-scroll;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        transition: 1s;
+    }
+}
+.nav-bar>ul{
+    padding: 0px;
+    margin: 0px;
+}
+.nav-bar>ul>li{
+    display: inline-block;
+}
+.nav-bar>ul>li>a{
+    display: block;
+    font-size: 1.3em;
+    padding: 0.7em 1em;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+.nav-bar>ul>li>a:hover{
+    background-color: #2abe8b;
+    color: white;
+}
+.vertical-nav-bar-botton{
+    font-size: 3em;
+    color: white;
+    display: none;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.vertical-nav-bar-botton:hover{
+    cursor: pointer;
+}
+.vertical-nav-bar-botton-close{
+    color: transparent;
+}
+@media screen and (max-width: 420px){
+    .vertical-nav-bar-botton{
+        display: block;
+    }
+    .portfolio-heading-container{
+        display: none;
+    }
+    .nav-bar{
+        position: fixed;
+        height: 100%;
+        z-index: 100;
+        background-color: #2b2b2b;
+        text-align: center;
+        overflow: hidden;
+        width: 0px;
+        transition: all 0.5s;
+    }
+    .nav-bar>ul{
+        margin-top: 5em;
+    }
+    .nav-bar>ul>li{
+        display: block;
+    }
+    .body-transparent{
+        width: 0%;
+        opacity: 0.7;
+        position: fixed;
+        height: 100%;
+        z-index: 99;
+        overflow: hidden;
+        background-color: black;
+        transition: 0.5s;
+    }
+    .vertical-nav-bar-botton-close{
+        position: relative;
+        top: 0;
+        margin-left: 90%;
+        cursor: pointer;
+        font-size: 3em;
+        color: white;
+        display: inline-block;
+    }
+}
+

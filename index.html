@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/tab-icon.png">
+    <script src="jquery-3.2.1.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="body-transparent">
+            <div class="vertical-nav-bar-botton-close" onclick="verticalNavBarBottonClose()">X</div>
+    </div>
+    
+    <div class="nav-bar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#projects-list">Projects</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contect">Contect</a></li>
+            </ul>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <div class="vertical-nav-bar-botton" onclick="verticalNavBarBotton()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                </div>
+                <div class="portfolio-heading-container">
+                    <img class="portfolio-icon" src="./images/Portfolio.png" alt="Portfolio icon">
+                    <h1>PROTFOLIO</h1>
+                </div>
+            </div>
+            <div class="col-md-7"></div>
+            <div class="col-md-2 col-xs-6 align-home-right">
+                <a class="btn page-down" href="#pageDown">Page Down</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 centrle-atom" id="centrle-atom" onload="loadAnimation()">
+                <img src="./images/Atom-animated.png" alt="Animated atom image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 name">
+                <h1>
+                    Zain Zia
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 quotation">
+                <p>
+                    I know that I don't know
+                    <br> but to know what I don't know
+                    <br> is the great thing.
+                </p>
+            </div>
+        </div>
+        <div class="row projects-list" id="projects-list">
+            <div class="col-xl-3 col-md-4 col-xs-6" id="small-size">
+                <div class="projects-image-container">
+                   <a href="https://zainzia0341.github.io/calculator/"><img src="./images/calculator.png" alt="Web Calculator"></a>
+                    <p>Calculator</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-xs-6" id="small-size">
+                <div class="projects-image-container">
+                    <a href="https://zainzia0341.github.io/todo-app/"><img src="./images/Todo App.png" alt="web Todo App"></a>
+                    <p>To DO App</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-xs-6" id="small-size">
+                <div class="projects-image-container">
+                    <a href="https://zainzia0341.github.io/Quiz-app/"><img src="./images/quiz-app.png" alt="Web Quiz App"></a> 
+                    <p>Quiz App</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="About">
+        <span>About</span>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4 col-sm-6" id="skills">
+                <h2>Skills</h2>
+                <h3>HTML</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <h3>Css</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <h3>Bootstrap</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 60%;"></div>
+                </div>
+                <h3>javaScript</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <h3>C-language</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 65%;"></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="joker-image-container">
+                    <img class="joker-image" src="./images/joker.jpg" alt="Picture">
+                    <p>
+                        Programming is not my carrier but it is my hobby. I like to develope apps and
+                        software, it just makes me feel good. And I like to learn new things whether it is 
+                        related to Programming or any thing else. 
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>        
+        </div>
+    </div>
+    <div class="container-fluid contect-container" id="pageDown">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 col-sm-4 col-xs-4">
+                <h2>Navigations</h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#projects-list">Projects list</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-4" id="contect">
+                <h2>Contect us</h2>
+                    <ul>
+                        <li><a href="mailto: zainzia0341@gmail.com?Subject=Hello%20again">Email</a></li>
+                        <li><a href="tel:+923412356573">Cell Phone no. 0341-2356573</a></li>
+                    </ul>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-4">
+                <h2>Follow us</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com" target="_blank"><img class="follow-link-fb" src="./images/fb.png" alt="facebook image"></a></li>
+                        <li><a href="https://www.github.com" target="_blank"><img class="follow-link-github" src="./images/github.png" alt="github image"></a></li>
+                    </ul>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
